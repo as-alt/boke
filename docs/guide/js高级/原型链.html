@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="generator" content="VuePress 2.0.0-beta.27">
     <link rel="icon" href="/boke/images/logo.png"><title>我的学习记录</title><meta name="description" content="">
-    <link rel="preload" href="/boke/assets/js/runtime~app.02f30dd0.js" as="script"><link rel="preload" href="/boke/assets/css/styles.6359fbdd.css" as="style"><link rel="preload" href="/boke/assets/js/8567.9ad500c1.js" as="script"><link rel="preload" href="/boke/assets/js/app.bdd7a593.js" as="script">
+    <link rel="preload" href="/boke/assets/js/runtime~app.3a86b227.js" as="script"><link rel="preload" href="/boke/assets/css/styles.6359fbdd.css" as="style"><link rel="preload" href="/boke/assets/js/8567.9ad500c1.js" as="script"><link rel="preload" href="/boke/assets/js/app.6e7c94d3.js" as="script">
     <link rel="stylesheet" href="/boke/assets/css/styles.6359fbdd.css">
   </head>
   <body>
@@ -24,6 +24,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
 fn<span class="token punctuation">.</span>test3<span class="token comment">//undefined</span>
 fn<span class="token punctuation">.</span><span class="token function">test3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//errer:no function</span>
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h4 id="图解" tabindex="-1"><a class="header-anchor" href="#图解" aria-hidden="true">#</a> 图解</h4><p>当实例对象fn调用test3()方法时，会先在自身上找是否有这个方法或属性,<strong>当没有时</strong>,会继续在__proto__<strong>隐式原型</strong>上找,直到最后一层,由于object原型对象上的__proto__等于null,所以返回no function，如果只是打印输出test3,并不是调用它，则会返回undefined</p><p><img src="/boke/js高级/原型链1.png" alt=""></p><h4 id="构造函数、实例和原型的关系" tabindex="-1"><a class="header-anchor" href="#构造函数、实例和原型的关系" aria-hidden="true">#</a> 构造函数、实例和原型的关系</h4><p>实例上的隐式原型与构造函数中的显式原型指向同一个地址,原型上的构造器指回构造函数</p><p><img src="/boke/js高级/原型链2.png" alt=""></p><!--]--></div><footer class="page-meta"><!----><!----><!----></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script src="/boke/assets/js/runtime~app.02f30dd0.js" defer></script><script src="/boke/assets/js/8567.9ad500c1.js" defer></script><script src="/boke/assets/js/app.bdd7a593.js" defer></script>
+    <script src="/boke/assets/js/runtime~app.3a86b227.js" defer></script><script src="/boke/assets/js/8567.9ad500c1.js" defer></script><script src="/boke/assets/js/app.6e7c94d3.js" defer></script>
   </body>
 </html>
